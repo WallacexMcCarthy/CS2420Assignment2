@@ -3,7 +3,6 @@ package assign02;
 import java.util.GregorianCalendar;
 
 public class CurrentPatient extends Patient{
-    // TEst
     private int physicianID;
     private GregorianCalendar lastVisit;
     /**
