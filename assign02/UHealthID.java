@@ -4,8 +4,8 @@ package assign02;
  * This class represents a unique UHealthID, which has a four letter
  * prefix and four number suffix, such as ABCD-0123
  *
- * @author Eric Heisler
- * @version May 5, 2023
+ * @author Eric Heisler and Wallace McCarthy (u0838487) and
+ * @version Jan 20, 2024
  */
 public class UHealthID {
 

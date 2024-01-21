@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
 /**
  * This class contains tests for FacilityGeneric.
  *
- * @author Eric Heisler and ??
- * @version May 5, 2023
+ * @author Eric Heisler and Wallace McCarthy (u0838487) and
+ * @version Jan 25, 2024
  */
 public class FacilityGenericTester {
 	// Generic Facility
@@ -223,5 +223,6 @@ public class FacilityGenericTester {
  	}
 
 	 // Tests Added By The Students -----------------------------------------------------------------------------
+
 
 }

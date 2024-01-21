@@ -9,8 +9,8 @@ import java.util.HashSet;
  * This class represents a record of patients that have visited a UHealth
  * facility.
  *
- * @author Eric Heisler and ??
- * @version May 5, 2023
+ * @author Eric Heisler and Wallace McCarthy (u0838487) and
+ * @version Jan 20, 2024
  */
 public class FacilityGeneric<T> {
 

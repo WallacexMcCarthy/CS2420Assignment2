@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
 /**
  * This class contains tests for Facility.
  *
- * @author Eric Heisler and ??
- * @version May 5, 2023
+ * @author Eric Heisler and Wallace McCarthy (u0838487) and
+ * @version Jan 25, 2024
  */
 public class FacilityTester {
 
@@ -173,7 +173,7 @@ public class FacilityTester {
 		assertEquals(expected, patients);
 	}
 	@Test
-	public void testNullLookupUHID() {
+	public void testFoundNullLookupUHID() {
 		CurrentPatient actual = verySmallFacility.lookupByUHID(new UHealthID("BCBC-0000"));
 		assertNull(actual);
 	}
@@ -181,6 +181,12 @@ public class FacilityTester {
 	public void testNullLookupPhysician() {
 		ArrayList<CurrentPatient> actualPatients = verySmallFacility.lookupByPhysician(111111111);
 		assertEquals(actualPatients, new ArrayList<>());
+	}
+
+	@Test
+	public void testNullLookupUHID(){
+		CurrentPatient actual = verySmallFacility.lookupByUHID(null);
+		assertNull(actual);
 	}
 
 }

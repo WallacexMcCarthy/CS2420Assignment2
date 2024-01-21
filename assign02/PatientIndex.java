@@ -2,9 +2,17 @@ package assign02;
 
 import java.util.TreeMap;
 
+/**
+ * Stores patients in a map that maps their uHealthID with their name.
+ *
+ *
+ * @author Wallace McCarthy (u0838487) and
+ * @version Jan 20, 2024
+ */
+
 public class PatientIndex {
     private TreeMap<UHealthID, String> patientMap;
-    PatientIndex(){
+    public PatientIndex(){
         patientMap = new TreeMap<>((uHealthID1, uHealthID2) -> {return uHealthID1.toString().compareTo(uHealthID2.toString());});
     }
 

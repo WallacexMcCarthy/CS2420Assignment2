@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a676de4-098d-49bd-af1e-374e528aac95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CS2420Assignment2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS2420Assignment2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assign02/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/assign02/Facility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assign02/FacilityTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/assign02/FacilityTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2420Assignment2/assign02/Facility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2420Assignment2/assign02/Facility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2420Assignment2/assign02/FacilityTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2420Assignment2/assign02/FacilityTester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,36 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FacilityTester.getInactivePatientsWillNullLookup">
+    <configuration name="Facility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign02.Facility" />
+      <module name="CS2420Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacilityTester.getInactivePatientsWillNullLookup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign02" />
+      <option name="MAIN_CLASS_NAME" value="assign02.FacilityTester" />
+      <option name="METHOD_NAME" value="getInactivePatientsWillNullLookup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FacilityTester.physicianListDuplicates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420Assignment2" />
       <extension name="coverage">
@@ -69,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FacilityTester.testAddDuplicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FacilityTester.testAddNullPatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS2420Assignment2" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +109,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="assign02" />
       <option name="MAIN_CLASS_NAME" value="assign02.FacilityTester" />
-      <option name="METHOD_NAME" value="testAddDuplicate" />
+      <option name="METHOD_NAME" value="testAddNullPatient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacilityTester.testNullLookupUHID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2420Assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign02" />
+      <option name="MAIN_CLASS_NAME" value="assign02.FacilityTester" />
+      <option name="METHOD_NAME" value="testNullLookupUHID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,8 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FacilityTester.getInactivePatientsWillNullLookup" />
+        <item itemvalue="JUnit.FacilityTester.testAddNullPatient" />
+        <item itemvalue="Application.Facility" />
+        <item itemvalue="JUnit.FacilityTester.testNullLookupUHID" />
         <item itemvalue="JUnit.FacilityTester.physicianListDuplicates" />
-        <item itemvalue="JUnit.FacilityTester.testAddDuplicate" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +151,7 @@
       <updated>1705793898604</updated>
       <workItem from="1705793900527" duration="96000" />
       <workItem from="1705795466719" duration="10000" />
-      <workItem from="1705823555491" duration="1744000" />
+      <workItem from="1705823555491" duration="3107000" />
     </task>
     <servers />
   </component>
