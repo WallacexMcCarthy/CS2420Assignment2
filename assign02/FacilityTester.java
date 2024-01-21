@@ -39,7 +39,7 @@ public class FacilityTester {
 		verySmallFacility.addPatient(new CurrentPatient("Riley", "Nguyen", uHID3, 9879876, date3));
 
 		smallFacility = new Facility();
-		smallFacility.addAll("src/assign02/small_patient_list.txt");
+		smallFacility.addAll("assign02/small_patient_list.txt");
 
 		// FILL IN -- Extend this tester to add more tests for the facilities above,
 		// as well as to create and test larger facilities.
@@ -79,12 +79,6 @@ public class FacilityTester {
 	}
 
 	// Very small facility tests ---------------------------------------------------
-	@Test
-	public void testSetVisit() {
-		// ensure no exceptions thrown
-		verySmallFacility.setLastVisit(uHID2, date3);
-		assertEquals(date3, verySmallFacility.lookupByUHID(uHID2).getLastVisit());
-	}
 
 	@Test
 	public void testVerySmallLookupUHID() {
@@ -94,22 +88,11 @@ public class FacilityTester {
 	}
 
 	@Test
-	public void testNullLookupUHID() {
-		CurrentPatient actual = verySmallFacility.lookupByUHID(new UHealthID("BCBC-0000"));
-		assertNull(actual);
-	}
-
-	@Test
 	public void testVerySmallLookupPhysicianCount() {
 		ArrayList<CurrentPatient> actualPatients = verySmallFacility.lookupByPhysician(9879876);
 		assertEquals(1, actualPatients.size());
 	}
 
-	@Test
-	public void testNullLookupPhysician() {
-		ArrayList<CurrentPatient> actualPatients = verySmallFacility.lookupByPhysician(111111111);
-		assertEquals(actualPatients, new ArrayList<>());
-	}
 
 	@Test
 	public void testVerySmallLookupPhysicianPatient() {
@@ -158,4 +141,46 @@ public class FacilityTester {
 		ArrayList<Integer> actual = smallFacility.getPhysicianList();
 		assertEquals(7, actual.size());
 	}
+
+	// Tests added by Students ----------------------------------------------------------------------------------
+	@Test
+	public void testSetVisit() {
+		// ensure no exceptions thrown
+		verySmallFacility.setLastVisit(uHID2, date3);
+		assertEquals(date3, verySmallFacility.lookupByUHID(uHID2).getLastVisit());
+	}
+	@Test
+	public void testAddDuplicate(){
+		// adds a duplicate
+		verySmallFacility.addPatient(new CurrentPatient("Jane", "Doe", uHID1, 1010101, date1));
+		// checks that the duplicate isn't added by checking physicians
+		ArrayList<CurrentPatient> actual = new ArrayList<>();
+		actual.add(new CurrentPatient("Jane", "Doe", uHID1, 1010101, date1));
+		assertEquals(verySmallFacility.lookupByPhysician(1010101), actual);
+
+	}
+	@Test
+	public void physicianListDuplicates(){
+		ArrayList<Integer> patients = smallFacility.getPhysicianList();
+		ArrayList<Integer> expected = new ArrayList<Integer>();
+		expected.add(0000000);
+		expected.add(6786786);
+		expected.add(1111111);
+		expected.add(7777777);
+		expected.add(9999999);
+		expected.add(1234123);
+		expected.add(8888888);
+		assertEquals(expected, patients);
+	}
+	@Test
+	public void testNullLookupUHID() {
+		CurrentPatient actual = verySmallFacility.lookupByUHID(new UHealthID("BCBC-0000"));
+		assertNull(actual);
+	}
+	@Test
+	public void testNullLookupPhysician() {
+		ArrayList<CurrentPatient> actualPatients = verySmallFacility.lookupByPhysician(111111111);
+		assertEquals(actualPatients, new ArrayList<>());
+	}
+
 }

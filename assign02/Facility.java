@@ -34,7 +34,12 @@ public class Facility {
 	 *         false if the patient was not added because they already exist in the record
 	 */
 	public boolean addPatient(CurrentPatient patient) {
-		// adds and returns boolean
+		// Checks if it is a duplicate
+		for (int i = 0; i < patientList.size(); i++) {
+			if(patientList.get(i).equals(patient)){
+				return false;
+			}
+		}
 		return patientList.add(patient);
 	}
 
